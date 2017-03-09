@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Santa's Sleigh</title>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <style>
+        img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Side Navigation on click -->
+    <nav class="w3-sidenav w3-white w3-card-2 w3-animate-left" style="display:none;z-index:2" id="mySidenav">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-xxxlarge w3-text-teal">Close
+            <i class="fa fa-remove"></i>
+        </a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+    </nav>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <ul class="w3-navbar w3-theme w3-left-align">
+            <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+                <a class="w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+            </li>
+            <li><a href="santasleigh.php" class="w3-red"><i class="fa fa-home w3-margin-right"></i>Santa's Sleigh</a></li>
+            <li class="w3-hide-small w3-right"><a href="#" class="w3-hover-black" title="Search"><i class="fa fa-search"></i></a></li>
+            <li class="w3-hide-small w3-right"><a href="shoppingcart.php" class="w3-hover-black" title="Shopping Cart"><i class="fa fa-shopping-cart"></i></a></li>
+        </ul>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+        <ul class="w3-navbar w3-left-align w3-theme">
+            <li><a href="#">Search</a></li>
+        </ul>
+     </div>
+    </div>
+
+    <div class="w3-main">
+        <div class="w3-panel">
+            <div class="w3-center">
+                <h1>Christmas</h1>
+            </div>
+        </div>
+
+        <div class="w3-panel">
+            <p>Christmas is an annual holiday to celebrate the birth of Jesus Christ. The ananal festival is celebrated and held on December 25. Christmastide  is the season in the West that last for 12 days. Twilfth Night with some traditions of Christmastide includes Octave.</p>
+
+            <p>The holiday season for Christmas consist of 2 days: Christmas Eve on December 24 and Christmas Day on December 25. Those 2 days has the main focus of gift-giving and sharing traditional meal with family.</p>
+            
+            <p>There are plenty of activities and festivities for the people to be doing while Christmas season is going around.</p>
+
+            <h5><u>Activities and Festivities</u></h5>
+            <ul>
+                <li>Gift giving</li>
+                <li>Completing Advent Calendar</li>
+                <li>Completing Advent Wreath</li>
+                <li>Christmas Decorations</li>
+                <li>Exchanging Christmas cards</li>
+                <li>Christmas music</li>
+                <li>Singing Christmas carols</li>
+                <li>Lighting Christingle</li>
+                <li>Special meal</li>
+                <li>Church services</li>
+            </ul>
+
+            <p>There are interchangeable figures that are shown at Christmas time. Santa Claus is the notable one. Other figures for the interchangeable in terms of gift giving in Christmas are Father Christmas, Saint Nicholas, and Christkind. The idea behind those figures is to deliver and please the children with presents and gifts.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+        <h4>Follow Us</h4>
+        <a class="w3-btn-floating w3-theme-l3" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+        <a class="w3-btn-floating w3-theme-l3" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+        <a class="w3-btn-floating w3-theme-l3" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+        <a class="w3-btn-floating w3-theme-l3 w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+
+        <div style="position:relative;bottom:50px;z-index:1;" class="w3-tooltip w3-right">
+            <span class="w3-text w3-padding w3-theme-l2 w3-hide-small">Go To Top</span>   
+            <a class="w3-btn w3-theme" href="learnmore.html"><span class="w3-xlarge">
+            <i class="fa fa-chevron-circle-up"></i></span></a>
+        </div>
+    </footer>
+
+    <!-- Script For Side Navigation -->
+    <script>
+    function w3_open() {
+        var x = document.getElementById("mySidenav");
+        x.style.width = "300px";
+        x.style.textAlign = "center";
+        x.style.fontSize = "40px";
+        x.style.paddingTop = "10%";
+        x.style.display = "block";
+    }
+    function w3_close() {
+        document.getElementById("mySidenav").style.display = "none";
+    }
+
+    // Used to toggle the menu on smaller screens when clicking on the menu button
+    function openNav() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>
+</body>
+</html>
